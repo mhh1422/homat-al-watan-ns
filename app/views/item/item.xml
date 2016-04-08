@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" navigatedTo="pageNavigatedTo">
+   
+    <Page.actionBar>
+        <ActionBar title="{{ title || 'حماة الوطن' }}">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal" ios:horizontalAlignment="center">
+                    <Label text="{{ title || 'حماة الوطن' }}" />
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    
+    <dock-layout stretchLastChild="true">
+        <Label dock="top" id="sub-title" text="{{subTitle}}" class="title" visibility="{{ subTitle ? 'visible' : 'collapsed' }}" />
+        <Label dock="top" id="date" text="{{date}}" class="muted small date" visibility="{{ date ? 'visible' : 'collapsed' }}" />
+        <WebView dock="top" id="web-view-source" src="{{ content || 'جاري التحميل...' }}" />
+    </dock-layout>
+    
+</Page>

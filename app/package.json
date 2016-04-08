@@ -1,0 +1,17 @@
+{
+    "name": "homat-al-watan",
+    "main": "app.js",
+    "version": "1.7.0",
+    "author": {
+        "name": "Muhannad Shelleh",
+        "email": "muhannad.shelleh@live.com"
+    },
+    "description": "Homat Al Watan discounts card",
+    "license": "Apache-2.0",
+    "keywords": ["Homat Al Watan"],
+    "android": {
+        "v8Flags": "--expose_gc"
+    },
+    "_id": "tns-template-hello-world@1.7.0",
+    "_from": "tns-template-hello-world@1.7.0"
+}

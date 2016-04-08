@@ -1,0 +1,9 @@
+.btn-grid { 
+    margin: 15%; 
+}
+
+.btn-grid > .btn {
+    min-width: 200px;
+    min-height: 200px;
+    margin: 15px;
+}

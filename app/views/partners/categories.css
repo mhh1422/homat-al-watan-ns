@@ -1,0 +1,7 @@
+.btn-grid .btn { 
+    width: 50%; 
+    height: 135px; 
+    margin: 15px 0; 
+    padding: 95px 15px 15px 15px; 
+    background-size: 80px 80px; 
+}

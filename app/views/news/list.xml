@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo">
+   
+    <Page.actionBar>
+        <ActionBar title="الأخبار">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal" ios:horizontalAlignment="center">
+                    <Label text="الأخبار" />
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    
+    <ListView id="container" items="{{ news }}" itemTap="newsPage" class="dated-list" android:divider="@null" android:dividerHeight="0dp" iod:divider="@null" ios:dividerHeight="0dp">
+        <ListView.itemTemplate>
+            <StackLayout class="item" orientation="vertical" id="{{ id }}" loaded="newsItemLoaded">
+                <Label class="link" id="{{ id }}" text="{{ title }}" />
+                <Label class="muted small" id="{{ id }}" text="{{ date }}" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+    
+</Page>

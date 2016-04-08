@@ -1,0 +1,12 @@
+@import { url('~/platform.css') };
+
+* { text-align: right; text-direction: rtl; direction: rtl; }
+Page { background-color: white; font-size: 17; text-align: right; background-image: url('~/data/images/background.jpg'); background-repeat: no-repeat; background-position: right bottom; } 
+ActionBar { font-size: 20px; font-weight: bold; color: white; background-color: #321f0d; background-image: url('~/data/images/action_background.jpg'); background-repeat: repeat; padding: 5px; }
+Button { margin: 10; padding: 10; text-align: center; direction: rtl; }
+.btn-grid { margin: 15%; }
+.btn-grid > .btn { padding: 100px 0 0 0; text-align: center; vertical-align: middle; color: maroon; font-size: 18px; background-repeat: no-repeat; background-position: center top; }
+.muted { color: gray; }
+.small { font-size: 14px; }
+.title { font-size: 18px; color: maroon; padding: 15px; }
+.padding-0-15 { padding: 0 15px; }

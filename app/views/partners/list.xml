@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" navigatedTo="pageNavigatedTo">
+   
+    <Page.actionBar>
+        <ActionBar title="{{ title || 'قائمة الشركاء' }}">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal" ios:horizontalAlignment="center">
+                    <Label text="{{ title || 'قائمة الشركاء' }}" />
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    
+    <StackLayout orientation="vertical" class="btn-list" style="horizontal-align: center; vertical-align: top; margin: 25px 0 0 0;" id="container" />
+    
+</Page>

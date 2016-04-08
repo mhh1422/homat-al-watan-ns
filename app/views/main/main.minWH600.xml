@@ -1,0 +1,33 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+   
+    <Page.actionBar>
+        <ActionBar title="حماة الوطن">
+            <ActionBar.titleView>
+                <StackLayout orientation="horizontal"
+                             ios:horizontalAlignment="center"
+                             android:horizontalAlignment="center">
+                    <Label text="حماة الوطن"  class="action-label"/>
+                </StackLayout>
+            </ActionBar.titleView>
+        </ActionBar>
+    </Page.actionBar>
+    
+    <GridLayout columns="*, 250px, 250px, *" rows="25px, 250px, 250px, *" class="btn-grid">
+        
+        <Label row="0" col="0" colSpan="4" />
+        
+        <Label row="1" col="0" />
+        <Button row="1" col="1" text="الشركاء" class="btn" style="background-image: url('~/data/images/partners.png');" tap="partnersPage" />
+        <Button row="1" col="2" text="نبذة عن البطاقة" class="btn" style="background-image: url('~/data/images/about.png');" tap="aboutPage" />
+        <Label row="1" col="3" />
+        
+        <Label row="2" col="0" />
+        <Button row="2" col="1" text="تواصل معنا" class="btn" style="background-image: url('~/data/images/contact.png');" tap="contactPage" />
+        <Button row="2" col="2" text="الأخبار" class="btn" style="background-image: url('~/data/images/news.png');" tap="newsPage" />
+        <Label row="2" col="3" />
+        
+        <Label row="3" col="0" colSpan="4" />
+        
+    </GridLayout>
+    
+</Page>
